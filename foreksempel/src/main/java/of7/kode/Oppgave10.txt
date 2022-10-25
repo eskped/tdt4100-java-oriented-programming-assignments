@@ -1,0 +1,33 @@
+@Test
+public void testDepartmentMove() {
+	Department NTNU = new Department();
+	Department IE = new Department(NTNU);
+	Department IDI = new Department(IE);
+	Department NV = new Department(NTNU);
+
+	IDI.moveToDepartment(NV);
+	assertTrue("IDI should be part of NV after move", IDI.getParentDepartment() == NV);
+	assertFalse("IE should not contain IDI after move", IE.contains(IDI));
+	assertTrue("IV should contain IDI after move", NV.contains(IDI));
+	IDI.moveToDepartment(null);
+	assertFalse("IDI should not be part of NV after move", IDI.getParentDepartment() == NV);
+	assertFalse("NV should not contain IDI after move", NV.contains(IDI));
+	try {
+		IDI.moveToDepartment(IDI);
+		fail("Should not be able to move IDI to be child itself");
+	} catch (IllegalArgumentException e) {
+		// Do nothing
+	}
+	IDI.moveToDepartment(IE);
+	try {
+		IDI.moveToDepartment(IE);
+		fail("Should not be able to move IDI to IE when it is already part of IE");
+	} catch (IllegalArgumentException e) {
+		// Do nothing
+	}
+
+	// This sequence of operations should ordinarily not fail 
+	// They may fail if encapsulation is not done properly:
+	IDI.moveToDepartment(NTNU);
+	IDI.moveToDepartment(IE);
+}

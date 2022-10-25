@@ -1,0 +1,23 @@
+@Test
+public void testPromote() {
+	Department NTNU = new Department();
+	Department IDI = new Department(NTNU);
+	
+	Employee employee = new Employee(IDI);
+	
+	assertTrue("Before promoting the employee should belong to IDI", employee.getDepartment() == IDI);
+	
+	employee.promote();
+
+	assertFalse("After promoting the employee should not belong to IDI", employee.getDepartment() == IDI);
+	assertTrue("After promoting the employee should belong to the university", employee.getDepartment() == NTNU);
+	
+	try {
+		employee.promote();
+		fail("Promotion should throw an IllegalStateException when not possible");
+	} catch (IllegalStateException e) {
+		assertTrue("After a failed promotion the employee should still belong to NTNU", employee.getDepartment() == NTNU);
+	} catch (Exception e) {
+		fail("Promotion should throw an IllegalStateException when not possible");
+	}
+}
