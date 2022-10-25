@@ -1,0 +1,12 @@
+
+j	java:S116"PRename this field "Tall1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´ùŸüÿÿÿÿ
+T
+java:S1854"9Remove this useless assignment to local variable "index".(ÍÌ‚·ùÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(îœÍºùÿÿÿÿ
+G
+java:S1172#",Remove this unused method parameter "email".(õ‰’Şüÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ÚÓ¡·üÿÿÿÿ
+E
+java:S1481"*Remove this unused "index" local variable.(ÍÌ‚·ùÿÿÿÿ
+J
+java:S1144#"/Remove this unused private "checkEmail" method.(õ‰’Şüÿÿÿÿ

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: no.hal.jex:no.hal.jex.jextest.lib:0.9.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/hal/jex/no.hal.jex.jextest.lib/0.9.0-SNAPSHOT/no.hal.jex.jextest.lib-0.9.0-20181203.225604-2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/no/hal/jex/no.hal.jex.jextest.lib/0.9.0-SNAPSHOT/no.hal.jex.jextest.lib-0.9.0-20181203.225604-2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/no/hal/jex/no.hal.jex.jextest.lib/0.9.0-SNAPSHOT/no.hal.jex.jextest.lib-0.9.0-20181203.225604-2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

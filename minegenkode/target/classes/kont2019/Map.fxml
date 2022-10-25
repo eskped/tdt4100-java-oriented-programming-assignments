@@ -1,0 +1,15 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="kont2019.BikeRentalController">
+   ...
+   <TextField fx:id="fromInput"/>
+   <TextField fx:id="toInput"/>
+   ...
+   <Button onAction="#plus1HourAction" text="+ 1 hour"/>
+   <Button onAction="#minus1HourAction" text="- 1 hour"/>
+   <Button onAction="#rentAction" text="Rent"/>
+</VBox>
+
